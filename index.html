@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Survey form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Sample Survey form</h1>
+   <p id = "description">Thank your for taking the time.</p>
+   <form id ="survey-form" action="survey-form">
+    <label id = "name-label" for="name">Name:</label><br>
+    <input id = "name" type="text" name = "name" placeholder=" Write down your name" required><br>
+    <label id = "email-label" for="email">Email:</label><br>
+    <input id = "email" type="email"  pattern=".+@gmail\.com" size="30" placeholder=" Write down your Email id" required><br>
+    <label id = "number-label" for ="number">Age:</label><br>
+    <input id = "number" type="number"  min = "1" max="160" placeholder=" Write down your age" required>
+    <p>Which stage best describes your current position?</p>
+    <select id="dropdown"> 
+      <option disabled selected value>Select from the below list</option>
+      <option value = "student">Microverse student</option>
+      <option value = "profession">Engineer</option>
+      <option value = "aspiration">Inventor</option>
+    </select>
+    <p>Would you recommend Microverse to a friend?</p>
+    <label>
+      <input name = "group-recommend" value = "Yes, I would!"
+      type = "radio" checked>"Yes, I would!"</br>
+    </label>
+    <label>
+      <input name = "group-recommend" value = "Well...probably not"
+    type = "radio" checked>
+    "Well...probably not"<br>
+    </label>
+    <label>
+      <input name = "group-recommend" value = "Heck no!!"
+    type = "radio" checked>
+    "Heck no!!"<br>
+    </label>
+    <p>What are your favorite aspects about Microverse?</p>
+    <label>
+      <input name = "liked" value = "Collaborative learning" 
+      type = "checkbox">
+      "Collaborative learning"<br>
+    </label>
+    <label>
+      <input name = "liked" value = "Nuturing community" 
+      type = "checkbox">
+      "Nuturing community"<br>
+    </label>
+    <label>
+      <input name = "liked" value = "Remote employment" 
+      type = "checkbox">
+      "Remote Employment"<br>
+    </label>
+    <label>
+      <input name = "liked" value = "Distance learning" 
+      type = "checkbox">
+      "Distance learning"<br>
+    </label>
+    <p>Do you have any complaints or insights?</p>
+    <textarea id = "complaint" name = "comment" 
+    placeholder="Enter your inspiration here...."></textarea><br>
+    <button type="submit" id="submit">
+      Submit
+    </button>
+
+   </form>
+
+  </body>
+</html>
